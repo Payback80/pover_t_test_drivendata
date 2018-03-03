@@ -12,7 +12,7 @@ basic feature interaction due the fact the dataset in anonymized
 for the final model i used a stacked ensemble of around 10 each gradient boosting trees, random forest, neural networks, elastic net linear model and stacked with a 10 folds GBM, all the models and parameters tuning have done under H2O.ai framework and R
 with this code you will be able to obtain 0.1650 mean logloss error 
 
-#instructions: 
+##instructions: 
 the main file is poverty_github.r you should be able to run it without problems, just change the "fread" directory lines, RFE, TSNE of your local machine and download the mid processing files: 
 RFE/a/b/b and tsne a/b.
 if you have forgotten the ratios of the 3 countries is:
@@ -33,7 +33,7 @@ GLRM
 naive bayes models
 k means clustering 
 
-#what didn't worked for balance the B country:
+##what didn't worked for balance the B country:
 
 creation of synthetic data with the SMOTE algorithm
 upsampling the minority class
