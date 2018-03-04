@@ -5,12 +5,12 @@ The World Bank is aiming to end extreme poverty by 2030. Crucial to this goal ar
 I was able to achieve top 5% in this competition against 2310 other data scientists world-wide. The problem was to model 3 different datasets
 My solution pipeline was: 
 
-pre process and normalize data
-feature space reduction with Recursive Feature Elimination (RFE) based on random forest and 10 fold CV this also gave me the features ordered by importance, 
-feature clustering and reduction with the t-distributed stochastic neighbor embedding algorithm (t-SNE) and added it as new features into the dataset
-basic feature interaction due the fact the dataset in anonymized 
-for the final model i used a stacked ensemble of around 10 each gradient boosting trees, random forest, neural networks, elastic net linear model and stacked with a 10 folds GBM, all the models and parameters tuning have done under H2O.ai framework and R
-with this code you will be able to obtain 0.1650 mean logloss error 
+pre process and normalize data,
+feature space reduction with Recursive Feature Elimination (RFE) based on random forest and 10 fold CV, this also gave me the features ordered by importance, 
+feature clustering and reduction with the t-distributed stochastic neighbor embedding algorithm (t-SNE) and added it as new features into the dataset,
+basic feature interaction due the fact the dataset in anonymized. 
+For the final model i used a stacked ensemble of around 10 each gradient boosting trees, random forest, neural networks, elastic net linear models and stacked with a 10 folds GBM, all the models and parameters tuning have done under H2O.ai framework and R
+with this code you will be able to obtain 0.1650 mean logloss error. 
 
 ##instructions: 
 the main file is poverty_github.r you should be able to run it without problems, just change the "fread" directory lines, RFE, TSNE of your local machine and download the mid processing files: 
